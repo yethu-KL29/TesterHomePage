@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transcription Table</title>
+</head>
+<body>
+  <table style="border-collapse: collapse; width: 100%;">
+    <thead>
+      <tr style="background-color: #000; color: #fff;">
+        <th style="border: 1px solid #000; padding: 8px;">Audio Description</th>
+        <th style="border: 1px solid #000; padding: 8px;">Duration</th>
+        <th style="border: 1px solid #000; padding: 8px;">Transcripted</th>
+        <th style="border: 1px solid #000; padding: 8px;">Corrected</th>
+        <th style="border: 1px solid #000; padding: 8px;">Uploaded Tester</th>
+        <th style="border: 1px solid #000; padding: 8px;">Corrected Tester</th>
+        <th style="border: 1px solid #000; padding: 8px;"></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr style="border: 1px solid #000;">
+          <td style="border: 1px solid #000; padding: 8px;">{{data.audio_description}}</td>
+          <td style="border: 1px solid #000; padding: 8px;">{{data.audio_length}}</td>
+          <td style="border: 1px solid #000; padding: 8px;">{{data.is_transcripted}}</td>
+          <td style="border: 1px solid #000; padding: 8px;">{{data.is_corrected}}</td>
+          <td style="border: 1px solid #000; padding: 8px;">{{data.upload_tester_name}}</td>
+          <td style="border: 1px solid #000; padding: 8px;">{{data.corrected_tester_name}}</td>
+          <td style="border: 1px solid #000; padding: 8px;">
+            <button onclick="showTranscription()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+              Show Transcription
+            </button>
+        </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
